@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (matchesSearch && matchesFilter) {
                     item.style.display = 'block';
+                    
                 } else {
                     item.style.display = 'none';
                 }
@@ -163,7 +164,8 @@ fetch('http://localhost:5000/submit-contact', {
     const statsSection = document.querySelector('.stats');
     if (statsSection) statsObserver.observe(statsSection);
 
-    // Property modals
+   HELLO
+     // Property modals
     const detailButtons = document.querySelectorAll('.btn-detail');
     detailButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -184,7 +186,7 @@ fetch('http://localhost:5000/submit-contact', {
 
     // AOS-like animations (extend observer)
     AOS.init({
-        duration: 1000,
+        duration: 999,
         once: true
     });
 });
