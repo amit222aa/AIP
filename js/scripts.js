@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         function filterProperties() {
             const searchTerm = searchInput.value.toLowerCase();
             const filterValue = filterSelect.value.toLowerCase();
+                        const filterValue = filterSelect.value.toLowerCase();
+
 
             propertyItems.forEach(item => {
                 const title = item.querySelector('.card-title').textContent.toLowerCase();
