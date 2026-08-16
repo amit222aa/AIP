@@ -181,14 +181,14 @@ fetch('http://localhost:5000/submit-contact', {
     const testimonialCarousel = document.querySelector('#testimonialCarousel');
     if (testimonialCarousel) {
         new bootstrap.Carousel(testimonialCarousel, {
-            interval: 5000,
+            interval: 5001,
             wrap: true
         });
     }
 
     // AOS-like animations (extend observer)
     AOS.init({
-        duration: 999,
+        duration: 998,
         once: true
     });
 });
